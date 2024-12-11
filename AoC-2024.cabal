@@ -1,0 +1,27 @@
+cabal-version:      3.4
+name:               AoC-2024
+version:            0.1.0.0
+synopsis:           Advent of Code 2024
+-- description:
+homepage:           https://github.com/hololeap/AoC-2024
+license:            MIT
+license-file:       LICENSE
+author:             hololeap
+maintainer:         hololeap@protonmail.com
+-- copyright:
+category:           AoC
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable AoC-2024
+    import:           warnings
+    main-is:          Main.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.17.2.1
+    hs-source-dirs:   src-exe
+    default-language: GHC2021
